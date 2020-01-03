@@ -1,6 +1,12 @@
 <form action="/haha/xulythongtin" method="POST">
     {% csrf_token %}
     <p> {{header}} </p>
+    <p> {{number}}</p>
+
+    {% for list_item in list_frequented %}
+        {{list_item}}<br>
+
+    {% endfor %}
     Name:<input name="name"><br>
     Gender:<select name="gender">
         <option value="M">Male</option>
