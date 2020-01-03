@@ -1,0 +1,13 @@
+<form action="/haha/xulythongtin" method="POST">
+    {% csrf_token %}
+    <p> {{header}} </p>
+    Name:<input name="name"><br>
+    Gender:<select name="gender">
+        <option value="M">Male</option>
+        <option value="F">Female</option>
+
+    </select><br>
+    <button type="submit">Gửi thông tin</button>
+
+
+</form>
